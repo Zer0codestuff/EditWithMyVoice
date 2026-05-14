@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Environments
+.venv/
+venv/
+env/
+
+# Runtime workspaces and generated media
+workspace/
+data/
+input/
+work/
+output/
+*.wav
+*.mp3
+*.m4a
+*.mp4
+*.mov
+*.ogg
+*.flac
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local secrets/config
+.env
+*.local

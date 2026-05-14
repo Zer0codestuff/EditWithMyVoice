@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "edit-with-my-voice"
+version = "0.1.0"
+description = "Local voice-cloning assisted audio repair UI for precise dialogue replacement."
+readme = "README.md"
+requires-python = ">=3.10,<3.12"
+license = {text = "MIT"}
+authors = [{name = "Zer0codestuff"}]
+keywords = ["voice-cloning", "audio-editing", "tts", "f5-tts", "gradio"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Win32 (MS Windows)",
+  "Environment :: MacOS X",
+  "Environment :: Web Environment",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Multimedia :: Sound/Audio",
+]
+dependencies = [
+  "gradio>=4.44,<6",
+  "huggingface-hub>=0.23",
+  "librosa>=0.10",
+  "numpy>=1.24,<2.3",
+  "soundfile>=0.12",
+  "f5-tts>=1.1.5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+edit-with-my-voice = "edit_with_my_voice.app:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
