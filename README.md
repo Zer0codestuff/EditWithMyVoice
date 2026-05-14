@@ -1,5 +1,7 @@
 # Edit With My Voice
 
+![Edit With My Voice UI screenshot](assets/ui-screenshot.png)
+
 A local, browser-based tool for repairing spoken audio with voice-cloning assisted generation and precise audio splicing.
 
 The goal is not to create a generic deepfake toy: it is a practical editor for replacing a wrong word or a short phrase in lectures, voiceovers, podcasts, and training material **when you have authorization to use the voice**.
